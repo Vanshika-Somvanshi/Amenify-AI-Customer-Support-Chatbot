@@ -1,0 +1,50 @@
+# ────────────────────────────────
+# Python
+# ────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# ────────────────────────────────
+# Environment / secrets
+# ────────────────────────────────
+.env
+# Keep .env.example — it's safe (no real keys)
+!.env.example
+
+# ────────────────────────────────
+# Node / Frontend
+# ────────────────────────────────
+node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.production.local
+
+# ────────────────────────────────
+# Ingestion intermediate files
+# ────────────────────────────────
+ingestion/raw_pages.json
+# Keep chunks.json in ingestion/ but NOT the one in backend/data/
+# (backend/data/ IS committed so Render has the index)
+
+# ────────────────────────────────
+# OS / Editor
+# ────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# ────────────────────────────────
+# Demo folder — internal notes only
+# ────────────────────────────────
+demo/HOW_TO_USE.md
