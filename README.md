@@ -2,7 +2,7 @@
 
 > **Amenify Summer 2026 — Software Engineering Internship Assignment**
 
-An AI-powered customer support chatbot that answers questions **exclusively** from content scraped from [amenify.com](https://amenify.com). Built with a Python FastAPI backend, a TF-IDF retrieval engine, and a React + Vite frontend. Zero compilation dependencies — runs cleanly on Python 3.13.
+An AI-powered customer support chatbot that answers questions **exclusively** from content scraped from [amenify.com](https://amenify.com). Built with a Python FastAPI backend, a TF-IDF retrieval engine and a React + Vite frontend. Zero compilation dependencies — runs cleanly on Python 3.13.
 
 ---
 
@@ -10,9 +10,15 @@ An AI-powered customer support chatbot that answers questions **exclusively** fr
 
 | Component | URL |
 |---|---|
-| 🌐 Frontend (Vercel) | *(add your Vercel URL after deployment)* |
-| ⚙️ Backend API (Render) | *(add your Render URL after deployment)* |
-| 📖 API Docs (Swagger UI) | `https://your-render-url.onrender.com/docs` |
+| 🌐 Frontend (Vercel) | https://amenify-ai-customer-support-chatbot.vercel.app |
+| ⚙️ Backend API (Render) | https://amenify-chatbot-api.onrender.com |
+| 📖 API Docs (Swagger UI) | https://amenify-chatbot-api.onrender.com/docs |
+
+---
+
+## 🏗️ Architecture Diagram
+
+![Architecture Diagram](demo/architecture.png)
 
 ---
 
@@ -45,8 +51,6 @@ An AI-powered customer support chatbot that answers questions **exclusively** fr
 ---
 
 ## 🏗️ Architecture
-
-![Architecture Diagram](demo/architecture.png)
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
@@ -302,20 +306,20 @@ The application is deployed across two platforms:
 
 ## 🧪 Example Queries & Expected Outputs
 
-| Query | Expected Behaviour | Requirement |
-|---|---|---|
-| `What services does Amenify offer?` | Lists cleaning, handyman, chores, dog walking, food/grocery delivery + source links | #1, #4 |
-| `Are Amenify's service pros background-checked?` | Yes — explains vetting, training, monitoring process | #4 |
-| `Does Amenify offer dog walking?` | Yes — confirms with service details | #4 |
-| `Tell me about move out cleaning` | Deposit protection, deep clean details | #4 |
-| `How does Amenify help property managers?` | Platform, PMS integrations, resident perks | #4 |
-| `What is Amenify Cash?` | Explains the credits/incentive program | #4 |
-| `What is Bitcoin?` | `"I don't know based on the available Amenify information."` — no sources | #5 |
-| `What are Amenify's prices?` | `"I don't know based on the available Amenify information."` — prices not published | #5 |
-| `Who is the CEO of Google?` | `"I don't know based on the available Amenify information."` | #5 |
-| `Tell me more about the first one` *(after asking about services)* | Correctly continues the topic using chat history | #6 |
-| `What was my first question?` | Recalls the conversation opener from session history | #6 |
-| `Summarise everything we discussed` | Full conversation summary | #6 |
+| Query | Expected Behaviour |
+|---|---|
+| `What services does Amenify offer?` | Lists cleaning, handyman, chores, dog walking, food/grocery delivery + source links |
+| `Are Amenify's service pros background-checked?` | Yes — explains vetting, training, monitoring process |
+| `Does Amenify offer dog walking?` | Yes — confirms with service details |
+| `Tell me about move out cleaning` | Deposit protection, deep clean details |
+| `How does Amenify help property managers?` | Platform, PMS integrations, resident perks |
+| `What is Amenify Cash?` | Explains the credits/incentive program |
+| `What is Bitcoin?` | `"I don't know based on the available Amenify information."` — no sources |
+| `What are Amenify's prices?` | `"I don't know based on the available Amenify information."` — prices not published |
+| `Who is the CEO of Google?` | `"I don't know based on the available Amenify information."` |
+| `Tell me more about the first one` *(after asking about services)* | Correctly continues the topic using chat history |
+| `What was my first question?` | Recalls the conversation opener from session history |
+| `Summarise everything we discussed` | Full conversation summary |
 
 ---
 
@@ -433,4 +437,4 @@ Main chatbot endpoint.
 ## 👤 Author
 
 **Built for:** Amenify Summer 2026 Software Engineering Internship  
-**LinkedIn:** *(add your LinkedIn URL)*
+**LinkedIn:** https://www.linkedin.com/in/vanshika-somvanshi-262b352a7
